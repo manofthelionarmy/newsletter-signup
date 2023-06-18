@@ -39,14 +39,11 @@ body {
   height: 100vh;
 }
 
-input, label {
-  display: block;
-  line-height: 1.5em;
-}
 
 label {
   font-weight:  bolder;
   font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 p, li {
@@ -82,6 +79,7 @@ input, button {
 }
 
 input {
+  display: block;
   border: 1px solid hsl(231, 7%, 60%);
   font-size: 1.5em;
   color: hsl(231, 7%, 60%);
@@ -116,5 +114,15 @@ button:hover {
 
 img {
   height: 80%;
+}
+
+.error-msg::after {
+  float: right;
+  content: 'error message';
+  color: red;
+}
+
+form {
+  width: 35vw;
 }
 
