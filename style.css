@@ -3,9 +3,22 @@
   src: url('./assets/fonts/Roboto-Regular.ttf');
 }
 
-body {
-  font-family: 'Roboto';
+* {
+ box-sizing: border-box; 
 }
+
+body {
+  display: flex;
+  font-family: 'Roboto';
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(234, 29%, 20%);
+}
+
 .attribution { 
   font-size: 11px; text-align: center; 
 }
@@ -13,3 +26,80 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%); 
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+.container.sign-up {
+  height: 100vh;
+}
+
+input, label {
+  display: block;
+}
+
+form {
+  margin-top: 10px;
+}
+
+label {
+  font-weight:  bolder;
+  font-size: 1.5em;
+  position: relative;
+  bottom: 15px;
+}
+
+p, li {
+  font-size: 2.0em;
+  font-weight: 400;
+}
+
+li::before {
+  background-image: url('./assets/images/icon-list.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 20px;
+  content: '';
+}
+
+li {
+  list-style: none;
+  margin: 10px 0 10px 0;
+  position: relative;
+  left: -40px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.0em;
+}
+
+input, button {
+  padding: 20px;
+  border-radius: 10px;
+  width: 35vw;
+}
+
+input {
+  border: 1px solid hsl(231, 7%, 60%);
+  font-size: 1.5em;
+  color: hsl(231, 7%, 60%);
+}
+
+input:focus {
+  color: black;
+}
+
+button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5em;
+}
+
+button:focus {
+  outline: 0;
+}
+
