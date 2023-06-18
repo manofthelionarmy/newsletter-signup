@@ -98,10 +98,16 @@ button {
   color: hsl(0, 0%, 100%);
   font-size: 1.5em;
   border: none;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 button:focus {
   outline: 0;
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 button:hover {
