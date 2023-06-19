@@ -14,7 +14,7 @@
     <div id="app"></div>
 
     <!-- Sign-up form start -->
-    <div class="container">
+    <div class="container subscribe" id="subscribe">
       <div class="signup">
         <h1>Stay updated!</h1>
 
@@ -27,7 +27,7 @@
         </ul>  
         <br>
 
-        <form>
+        <form id="signup-form">
           <label for="email">Email address</label>
           <input id="email" type="email" value="email@company.com">
           <br>
@@ -36,6 +36,21 @@
 
       </div>
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+    
+    <div class="container success hidden" id="success">
+      <div class="content">
+        <img src="../assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        
+        <p>
+          A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+        Please open it and click the button inside to confirm your subscription.
+        </p>
+
+
+        <button id="dismiss">Dismiss message</button>
+      </div>
     </div>
 
     <!-- Sign-up form end -->
