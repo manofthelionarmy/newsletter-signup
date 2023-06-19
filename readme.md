@@ -1,9 +1,6 @@
 # TODO:
 
-- Instead of redirecting to a new page, why don't I do a modal with an overlay?
-  - this would require me to create html elements via strings by interacting with
-    the dom api.
-- Create separate html file that has error state
-  - copy pasta main html (index.html at root level)
-  - add error msg for form validation
-    - use flex to add even space between label
+1. Create html page for main page
+2. Create html page for success
+3. Migrate html elements from success page to main. Use js and css to hide and make visible the elements
+4. Add email validation logic, toggle error state on failure
