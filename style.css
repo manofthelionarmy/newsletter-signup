@@ -45,6 +45,17 @@ body {
   line-height: 1.5em;
 }
 
+.error-state::after  {
+  content: 'Invalid email';
+  float: right;
+  color: hsl(4, 100%, 67%);
+}
+
+.bad-input,.bad-input#email {
+  background-color: pink;
+  color: tomato;
+}
+
 .container.subscribe p, li {
   font-size: 2.0em;
   font-weight: 400;
