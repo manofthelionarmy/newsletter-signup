@@ -24,6 +24,10 @@ document.getElementById('signup-form').addEventListener('submit', (event) => {
   document.getElementById('subscribe').classList.add('hidden')
   document.getElementById('success').classList.remove('hidden')
   document.getElementById('subscribe').classList.add('visible')
+  document.getElementById('message').innerHTML = `
+            A confirmation email has been sent to <b>${email.value}</b>. 
+          Please open it and click the button inside to confirm your subscription.
+`
 })
 
 document.getElementById('dismiss').addEventListener('click', (event) => {
