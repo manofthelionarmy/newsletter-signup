@@ -15,7 +15,8 @@ document.getElementById('signup-form').addEventListener('submit', (event) => {
   event.preventDefault()
   emailLabel.classList.remove('error-state')
   email.classList.remove('bad-input')
-  if ( email.validity.typeMismatch ) {
+  const {typeMismatch, valueMissing} = email.validity
+  if ( typeMismatch || valueMissing) {
     emailLabel.classList.add('error-state')
     email.classList.add('bad-input')
     return
