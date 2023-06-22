@@ -27,9 +27,9 @@
         </ul>  
         <br>
 
-        <form id="signup-form">
+        <form id="signup-form" novalidate>
           <label for="email" id="email-label">Email address</label>
-          <input id="email" value="email@company.com">
+          <input id="email" type="email" placeholder="email@company.com" onfocus="this.value=''">
           <br>
           <button id="submit">Subscribe to monthly newsletter</button>
         </form>

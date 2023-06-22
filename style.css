@@ -46,7 +46,7 @@ body {
 }
 
 .error-state::after  {
-  content: 'Invalid email';
+  content: 'Valid email';
   float: right;
   color: hsl(4, 100%, 67%);
 }
